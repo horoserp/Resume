@@ -1,0 +1,50 @@
+/*Import Google font*/
+@import url('https://fonts.googleapis.com/css?family=Charm');
+
+/*Colors to use
+Dark - Tropical Green - #00755E
+Medium - Amazon - #3B7A57
+Light - Jungle Green - #29AB87 */
+
+/*Style for the entire document*/
+body {
+    font-family: 'Charm';
+    font-size: larger;
+}
+
+/*Style for the Horizontal Rule*/
+hr {
+    /*Size*/
+    height: 0.12in;
+    /*Color*/
+    background-color: green;
+    /*Border*/
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 20px;
+}
+
+/*Style for the Heading2*/
+h2 {
+    color: #3B7A57;
+}
+
+/*Style for the Heading3*/
+h3 {
+    color: #29AB87;
+}
+
+/*Style bold elements*/
+.bold {
+    font-weight: bold;
+}
+
+/*Style italic elements*/
+.italics {
+    font-style: italic;
+}
+
+/*Style dates*/
+.dates {
+    font-size: medium;
+}
