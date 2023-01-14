@@ -27,6 +27,18 @@ hr {
     border-radius: 20px;
 }
 
+button {
+    /*Position*/
+    float: right;
+    margin-top: -80px;
+    margin-right: 30px;
+    /*Size*/
+    font-size: larger;
+    padding: 2px 10px 2px 10px;
+    /*Border*/
+    border-radius: 10px;
+}
+
 /*Style for the Heading2*/
 h2 {
     /*Color*/
