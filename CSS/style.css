@@ -117,6 +117,22 @@ li::before {
     width: 10%;
 }
 
+/*Hide the second scroll text initially*/
+#scroll-text2 {
+    display: none;
+}
+
+/*Style the non-scrolling text for Soft Skills*/
+#scroll-text2 span {
+    text-align: justify;
+}
+
+#scroll-text2 span::after {
+    content: "";
+    display: inline-block;
+    width: 10%;
+}
+
 /*Create scrolling text for Soft Skills*/
 #scroll-text {
     -moz-animation: my-animation 15s linear infinite;
