@@ -130,7 +130,7 @@ li::before {
 #scroll-text2 span::after {
     content: "";
     display: inline-block;
-    width: 10%;
+    width: 8%;
 }
 
 /*Create scrolling text for Soft Skills*/
