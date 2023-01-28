@@ -1,7 +1,7 @@
 var clr1;
 clr1 = setInterval(function() {
-  flash('blinking', 'green', 'red')
-}, 1000);
+  flash('blinking', '#00cc00', 'black')
+}, 500);
 
 // Print Function
 function printResume() {
@@ -9,8 +9,8 @@ function printResume() {
   clearInterval(clr1);
   clr1 = setInterval(function() {
     flash('blinking', 'black', 'black')
-  }, 1000);
-  const myTimeout = setTimeout(myGreeting, 1000);
+  }, 500);
+  const myTimeout = setTimeout(myGreeting, 500);
 }
 
 // Make select text blink
@@ -38,7 +38,7 @@ function myGreeting() {
   // Restart blinking text
   clearInterval(clr1);
   clr1 = setInterval(function() {
-    flash('blinking', 'red', 'green')
-  }, 1000);
+    flash('blinking', '#00cc00', 'black')
+  }, 500);
 
 }

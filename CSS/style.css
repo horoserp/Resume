@@ -97,6 +97,20 @@ li::before {
         /*Remove print button*/
         display: none;
     }
+
+    #scroll-container {
+        margin-bottom: 0px;
+    }
+}
+
+/*Style the Hard Skills table*/
+table {
+    width: 100%;
+}
+
+td {
+    text-align: center;
+    width: 25%;
 }
 
 /*Style the container that hold the scrolling text*/
@@ -104,6 +118,7 @@ li::before {
     border: 3px solid #00755E;
     border-radius: 10px;
     overflow: hidden;
+    margin-bottom: 50px;
 }
 
 /*Style the scrolling text*/
