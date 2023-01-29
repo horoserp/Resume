@@ -17,7 +17,6 @@ function printResume() {
 function flash(el, c1, c2) {
   var text = document.getElementById(el);
   text.style.color = (text.style.color == c2) ? c1 : c2;
-  setTimeout
 }
 
 function myGreeting() {
@@ -40,5 +39,4 @@ function myGreeting() {
   clr1 = setInterval(function() {
     flash('blinking', '#00cc00', 'black')
   }, 500);
-
 }
