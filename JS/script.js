@@ -1,5 +1,5 @@
 var clr1;
-clr1 = setInterval(function() {
+clr1 = setInterval(() => {
   flash('blinking', '#00cc00', 'black')
 }, 500);
 
@@ -7,7 +7,7 @@ clr1 = setInterval(function() {
 function printResume() {
   // Stop the blinking text
   clearInterval(clr1);
-  clr1 = setInterval(function() {
+  clr1 = setInterval(() => {
     flash('blinking', 'black', 'black')
   }, 500);
   const myTimeout = setTimeout(myGreeting, 500);
@@ -36,7 +36,7 @@ function myGreeting() {
   textAnimation.style.display = "block";
   // Restart blinking text
   clearInterval(clr1);
-  clr1 = setInterval(function() {
+  clr1 = setInterval(() => {
     flash('blinking', '#00cc00', 'black')
   }, 500);
 }
