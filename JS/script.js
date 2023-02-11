@@ -1,47 +1,43 @@
 $(document).ready(()=> {
+  // Start the element blinking
   var setBlinking;
   setBlinking = setInterval(() => {
     flash('blinking', '#00cc00', 'black')
   }, 500);
 
-  // Make select text blink
-  function flash(el, c1, c2) {
-    var text = document.getElementById(el);
-    text.style.color = (text.style.color == c2) ? c1 : c2;
+  // Make select element change colors
+  function flash(element, color1, color2) {
+    var text = document.getElementById(element);
+    text.style.color = (text.style.color == color2) ? color1 : color2;
   }
 
   // Print Resume
 
-  // Stop the blinking and scrolling text
+  // When the print button is clicked...
   $("#print-button").click(()=> {
+    // Stop the blinking time and...
     clearInterval(setBlinking);
-    setBlinking = setInterval(() => {
-      flash('blinking', 'black', 'black')
-    }, 500);
-    // Hide the scrolling text
-    textAnimation = document.getElementById('scroll-text');
-    textAnimation.style.display = "none";
-    // Display standard text
-    textStop = document.getElementById('scroll-text2');
-    textStop.style.display = "block";
-    textStop.style.margin = "0 0 0 60px";
-    // Wait for blinking to stop
-    const myTimeout = setTimeout(resumePrinting, 500);
-    // Display pop-up alert giving recommended print settings
+    // Set the text color to black...
+    $("#blinking").css("color", "black");
+    // Hide the scrolling text...
+    $("#scroll-text").css("display", "none");
+    // Display the standard text and set an appropriate margin...
+    $("#scroll-text2").css({
+      "display": "block",
+      "margin": "0 0 0 65px"
+    });
+    // Display a pop-up alert stating recommended print settings...
     alert('Please make sure to enable printing "Background graphics" in "More settings" to ensure proper printing!');
-  });
-
-  // Open print dialog and reset blinking and scrolling text
-  function resumePrinting() {
-    // Open print dialog
+    // Open the print dialog box...
     window.print();
-    // Hide standard text and shot scrolling text again
-    textStop.style.display = "none";
-    textAnimation.style.display = "block";
-    // Restart blinking text
+    // Hide standard text...
+    $("#scroll-text2").css("display", "none");
+    // Show scrolling text...
+    $("#scroll-text").css("display", "block");
+    // And restart the blinking text
     clearInterval(setBlinking);
     setBlinking = setInterval(() => {
       flash('blinking', '#00cc00', 'black')
     }, 500);
-  }
+  });
 });
