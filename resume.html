@@ -7,6 +7,8 @@
     <meta name="author" content="Robert P. Horosewski">
     <meta name="description" content="A resume designed to showcase skills in web development">
     <meta name="robots" content="noindex, nofollow">
+    <meta name="language" content="english">
+    <meta name="format-detection" content="telephone=yes">
     <title>Resume</title>
 
     <link rel="stylesheet" type="text/css" href="/CSS/style.css">
@@ -35,10 +37,23 @@
     <!--Move Soft Skills to Footer?-->
     <!--Make minor flash like 3 times (like lightning) and then stop unless hovered over-->
     <!--Semantically describe webpage by changing appropriate <div> to <section> elements-->
+    <!--Replace Absolute Units with Relative Values (measurements)-->
+    <!--Explore Grid Layout with Grid-Template-Areas and using Names like Bio, Education, Work Experience-->
+    <!--Could the answer to extra soft skills be (flex-wrap: nowrap)?-->
+    <!--Use li::marker to change bullet points instead of li::before? And remove li { text-indent & padding-left }-->
+    <!--Add text-shadow somewhere!-->
+    <!--Change blinking to css animation (grow in size and change color, run 3 times, then only on hover?)-->
+    <!-- Avoid overspecifity: apply CSS rules to container as much as possible-->
+    <!-- BIG ISSUE: Remove ID as much as possible and replace with element selectors e.g. header > img {}-->
     <!--Add certificate for Coursera Introduction to Front End Development (Started February 25th Finished March 3rd)-->
         <!--Programming with JavaScript (Started March 3rd Finished March 25th)-->
         <!--Version Control (Started March 25th Finished April 8th)-->
-        <!--HTML and CSS in depth (Started April 8th)-->
+        <!--HTML and CSS in depth (Started April 8th Finished May 10th)-->
+        <!--React Basics (Started May 13th Finished July 15th)-->
+        <!--Advanced React (Started July 15th Finished October 6)-->
+        <!--Principles of UX/UI Design (Started Occtober 10 Finished November 3)-->
+        <!--Front-End Developer Capstone (Started November 6 Finisihed January 22)-->
+        <!-- Coding Interview Preparation (Started January 22 Finished February 5) -->
 </head>
 <body>
     <!-- Horizontal Rule at the top of the page -->
@@ -60,7 +75,18 @@
         <p>12 Victor Ave.<br>
             Nashua, NH 03060<br>
             (603) 718-4611<br>
-            robert.horosewski@gmail.com
+            robert.horosewski@gmail.com<br>
+            <a href="https://github.com/horoserp" target="blank" rel="noopener noreferrer">https://github.com/horoserp</a>
+        </p>
+    </div>
+    <!--Objective-->
+    <div>
+        <h3>Objective</h3>
+        <!-- V: Consider replacing "supportive" in "...skills in a team-driven, supportive environment." (Sounds like I'm running from last job)-->
+        <p>Having recently completed Udemy's coursework in building landing pages and using JavaScript, and expecting completion of Meta's Front-End
+            Developer Professional Certificate by November, I am eager to transition to a new career as a front-end website developer, where I look
+            forward to utilizing my newly acquired HTML, CSS and JavaScript skills in a team-driven, supportive environment. As a quick learner with
+            strong communication skills, I anticipate contributing immediately to your company's success.
         </p>
     </div>
     <!--Education-->
@@ -68,11 +94,17 @@
         <h3>Education</h3>
         <p><span class="bold"><a href="https://udayton.edu/" target="_blank" rel="noopener noreferrer">University of Dayton, Dayton OH </a></span>
             <span class="italics">- Bachelor of Science, Major in Psychology, <span id="blinking">Minor in Computer Science</span></span></p>
+        <!-- J: Avoid using graduation date.-->
         <p class="dates">DECEMBER 1997</p>
     </div>
     <!--Professional Development-->
     <div>
         <h3>Professional Development</h3>
+        <p><span class="bold"><a href="https://www.coursera.org/" target="_blank" rel="noopener noreferrer">Coursera, Online</a></span>
+            <ul>
+                <li><span class="italics"><a href="https://www.coursera.org/professional-certificates/meta-front-end-developer?skipBrowseRedirect=true" taget="_blank"
+                    rel="noopener noreferrer">Meta Front-End Developer Professional Certificate</a></span><span class="dates"> - ANTICIPATED NOVEMBER 2023</span></li>
+            </ul>
         <p><span class="bold"><a href="https://www.udemy.com/" target="_blank" rel="noopener noreferrer">Udemy, Online </a></span>
             <ul>
                 <li><span class="italics"><a href="https://www.udemy.com/course/build-an-animated-landing-page-by-html-css-and-javascript" target="_blank" 
@@ -88,39 +120,45 @@
         <!--Job 1-->
         <p><span class="bold"><a href="https://ponemahdental.com/" target="_blank" rel="noopener noreferrer">Ponemah Crossing Dental, P.C., Amherst, NH </a></span>
             <span class="italics">- Treatment Coordinator</span></p>
-        <p class="dates">DECEMBER 2009 - PRESENT</p>
+        <p class="dates">DECEMBER 2009 - SEPTEMBER 2023 <!--9/18/23--></p>
         <!--Duties-->
         <ul>
-            <li>Website duties include updating the company's Website by creating new pages, resdesigning old pages and adding CSS/JavaScript to 
-                ensure eye-catching functionality. Acted as primary liaison for external Website Company.</li>
-            <li>Social Media duties include creating Facebook and Instagram accounts and updating with current content. Acted as primary liason 
-                for external Social Media Company.</li>
-            <li>IT duties include providing primary internal IT support for 20 Windows 10-based workstations, one Windows Server 2016 Standard-based server 
-                and Weave VoIP phone systems. Acted as primary liason for external IT provider.</li>
+            <!--V: Make "Act as primary liaison for..." a separate bullet point that includes all 3 duties.-->
+            <li>Perform website duties including updating the company's website by creating new pages, redesigning old pages and adding CSS/JavaScript to 
+                ensure eye-catching functionality. Act as primary liaison for external website Company.</li>
+            <li>Execute social media duties including creating Facebook and Instagram accounts and updating with current content. Act as primary liaison 
+                for external social media company.</li>
+            <li>Carry out IT duties including providing internal IT support for 20 Windows 10 workstations, one Windows Server 2016 Standard server 
+                and Weave VoIP phone systems. Act as primary liaison for external IT provider.</li>
             <li>Fulfill insurance responsibilities involving updating insurance information, creating estimates and negotiating financial agreements for 
                 dental work, verifying insurance benefits prior to patient appointments and preparing insurance claims.</li>
+            <!--V: Managed customer interactions, including resolving customer complaints, (remove answering VoIP and managing email), etc.-->
             <li>Complete administrative tasks consisting of facilitating patient referrals, answering VoIP phone system, optimizing up to seven provider 
                 schedules, resolving customer complaints, managing email and completing charting and filing (both digital and non-digital).</li>
         </ul>
         <!--Job 2-->
-        <p><span class="bold"><a href="https://www.drakecounselingservices.com/" target="_blank" rel="noopener noreferrer">Drake Counseling, Grand Forks, ND </a></span>
+        <p><span class="bold"><a href="https://www.drakecounselingservices.com/" target="_blank" rel="noopener noreferrer">Drake Counseling Services, Grand Forks, ND </a></span>
             <span class="italics">- Office Manager</span></p>
         <p class="dates">JUNE 2007 - APRIL 2009</p>
+        <!--V: Consider adding Duties-->
     </div>
     <!--Projects-->
-    <!-- <div>
+    <div>
         <h3>Projects</h3>
         <ul>
+            <!--V: Make "Led design groups" sound more important. "Met with stakeholders to identify design goals of website..."-->
             <li>Led design groups for the two iterations of the Ponemah Crossing Dental, P.C. website.</li>
             <li>Updated both websites with current content utilizing Joomla and WordPress respectively.</li>
+            <!--V: You don't create and update coworkers. Instructed coworkers on how to post to social media platforms...-->
             <li>Created, updated and instructed coworkers on the use of five social media platforms: Google, Facebook, Instagram, Yelp and HealthGrades.</li>
-            <li>Designed various materials including an adaptable advertising template, and insurance brochure, an implant brochure, 
-                a procedure manual and an addiction eduaction module.</li>
+            <li>Designed various materials including an adaptable advertising template, an insurance brochure, an implant brochure, 
+                a procedure manual and an addiction education module.</li>
         </ul>
-    </div> -->
+    </div>
     <!--Hard Skills-->
     <div>
         <h3>Hard Skills</h3>
+        <!--Add Figma to resusme after course is complete-->
         <table id="skills">
             <tr>
                 <td>
@@ -133,21 +171,21 @@
                     JavaScript
                 </td>
                 <td>
-                    Java
+                    WordPress
                 </td>
             </tr>
             <tr>
                 <td>
+                    React
+                </td>
+                <td>
+                    Git
+                </td>
+                <td>
                     Visual Studio Code
                 </td>
                 <td>
-                    Android Studio
-                </td>
-                <td>
-                    Wordpress
-                </td>
-                <td>
-                    GitHub
+                    Java
                 </td>
             </tr>
         </table>
@@ -156,6 +194,7 @@
     <div>
         <h3>Soft Skills</h3>
         <div id="scroll-container">
+            <!--Consider adding communication/collaboration-->
             <div id="scroll-text">
                 <span>Adaptable</span>
                 <span>Organized</span>
@@ -172,6 +211,15 @@
             </div>
         </div>
     </div>
-
+    <!--References-->
+    <div>
+        <h3>References</h3>
+        <h4>Addresses and phone numbers available upon request.</h4>
+        <ul>
+            <li>Dr. Matthew Leighton, Owner<br>Ponemah Crossing Dental, P.C.<br>Former supervisor</li><br>
+            <li>Karen Holt, Treatment Coordinator<br>Ponemah Crossing Dental, P.C.<br>Former coworker</li><br>
+            <li>Vicki Loyland, Director<br>Drake Counseling Services<br>Former supervisor</li>
+        </ul>
+    </div>
 </body>
 </html>

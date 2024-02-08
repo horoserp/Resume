@@ -77,6 +77,7 @@ li {
 
 /*Add right-pointing pointer as new bullet*/
 li::before {
+/* li::marker { */
     content: '\25BA';
     padding-right: 1em;
     color: green;
@@ -104,6 +105,12 @@ li::before {
 
 /*Change the way the page looks for printing*/
 @media print {
+    hr {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+        background-color: green !important;
+    }
+    
     body {
         /*Font*/
         font-family: serif;
