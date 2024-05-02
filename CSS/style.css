@@ -102,6 +102,41 @@ li::before {
     color: white;
     background-color: #29AB87;
 }
+/* Style additional skills */
+
+.watermark {
+    position: absolute;
+    opacity: 0.25;
+    z-index: 999;
+}
+
+.skill {
+    top: 15%;
+    left: 45%;
+    font-size: 80px;
+    transform: rotateZ(20deg);
+}
+
+.skill2 {
+    top: 75%;
+    left: 40%;
+    font-size: 65px;
+    transform: rotate(-15deg);
+}
+
+.skill3 {
+    top: 110%;
+    left: 60%;
+    font-size: 50px;
+    transform: rotate(15deg);
+}
+
+.skill4 {
+    top: 152%;
+    left: 30%;
+    font-size: 75px;
+    transform: rotate(-10deg);
+}
 
 /*Change the way the page looks for printing*/
 @media print {
@@ -139,6 +174,30 @@ li::before {
 
     li {
         text-indent: -27px;
+    }
+
+    .skill {
+        top: 8%;
+        left: 35%;
+        transform: rotate(25deg);
+    }
+
+    .skill2 {
+        top: 40%;
+        left: 40%;
+        transform: rotate(-20deg);
+    }
+
+    .skill3 {
+        top: 69%;
+        left: 48%;
+    }
+
+    .skill4 {
+        font-size: 85px;
+        top: 98%;
+        left: 35%;
+        transform: rotate(-25deg);
     }
 
 }
