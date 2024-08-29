@@ -84,6 +84,24 @@ li::before {
     color: green;
 }
 
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 2vw;
+}
+
+.flex > div {
+    margin-bottom: 15px;
+    flex-basis: 33%;
+    text-align: left;
+}
+
+.flex > div::before {
+    content: '\25BA';
+    padding-right: 1em;
+    color: green;
+}
+
 /*Style for the print button*/
 #print-button {
     /*Position*/
@@ -175,6 +193,10 @@ li::before {
 
     li {
         text-indent: -27px;
+    }
+
+    ul {
+        padding-inline-start: 5px;
     }
 
     .skill {
