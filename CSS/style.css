@@ -6,307 +6,300 @@ Light - Jungle Green - #29AB87 */
 
 /*Style for the entire document*/
 body {
-    /*Font*/
-    font-family: 'Courier';
-    font-size: 20px;
-    /*Margin*/
-    margin: 50px 150px 0 50px;
+  /*Font*/
+  font-family: "Courier";
+  font-size: 20px;
+  /*Margin*/
+  margin: 50px 150px 0 50px;
 }
 
 /*Style for the Horizontal Rule*/
 hr {
-    /*Size*/
-    height: 0.12in;
-    /*Color*/
-    background-color: green;
-    /*Border*/
-    border-style: solid;
-    border-width: 2px;
-    border-radius: 20px;
+  /*Size*/
+  height: 0.12in;
+  /*Color*/
+  background-color: green;
+  /*Border*/
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 20px;
 }
 
 /*Style my picture*/
 img {
-    float: right;
-    margin: 0px 50px 0px 0px;
-    width: 25%;
-    border-radius: 50px;
-}
-
-/*Style for the Heading2*/
-h1 {
-    /*Color*/
-    color: #3B7A57;
-}
-
-/*Style for the Heading3*/
-h3 {
-    /*Color*/
-    color: #29AB87;
+  float: right;
+  margin: 0px 50px 0px 0px;
+  width: 25%;
+  border-radius: 50px;
 }
 
 /*Style the links*/
 a {
-    color: black;
+  color: black;
 }
 
 a:hover {
-    color: #00755E;
+  color: #00755e;
 }
 
 /*Style bold elements*/
 .bold {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 /*Style italic elements*/
 .italics {
-    font-style: italic;
+  font-style: italic;
 }
 
 /*Style dates*/
 .dates {
-    font-size: medium;
+  font-size: medium;
 }
 
 /*Remove standard bullets*/
 li {
-    list-style: none;
-    text-indent: -33px;
-    padding-left: 36px;
+  list-style: none;
+  text-indent: -33px;
+  padding-left: 36px;
 }
 
 /*Add right-pointing pointer as new bullet*/
 li::before {
-/* li::marker { */
-    content: '\25BA';
-    padding-right: 1em;
-    color: green;
+  /* li::marker { */
+  content: "\25BA";
+  padding-right: 1em;
 }
 
 .flex {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: 2vw;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 2vw;
 }
 
 .flex > div {
-    margin-bottom: 15px;
-    flex-basis: 33%;
-    text-align: left;
+  margin-bottom: 15px;
+  flex-basis: 33%;
+  text-align: left;
 }
 
 .flex > div::before {
-    content: '\25BA';
-    padding-right: 1em;
-    color: green;
+  content: "\25BA";
+  padding-right: 1em;
 }
 
 /*Style for the print button*/
 #print-button {
-    /*Position*/
-    float: right;
-    margin-top: -80px;
-    margin-right: -450px;
-    /*Size*/
-    font-size: larger;
-    padding: 2px 10px 2px 10px;
-    /*Border*/
-    border-radius: 10px;
-    /*Pointer*/
-    cursor: pointer;
+  /*Position*/
+  float: right;
+  margin-top: -80px;
+  margin-right: -450px;
+  /*Size*/
+  font-size: larger;
+  padding: 2px 10px 2px 10px;
+  /*Border*/
+  border-radius: 10px;
+  /*Pointer*/
+  cursor: pointer;
 }
 
 #print-button:hover {
-    color: white;
-    background-color: #29AB87;
+  color: white;
+  background-color: #29ab87;
 }
 /* Style additional skills */
 
 .watermark {
-    position: absolute;
-    opacity: 0.25;
-    z-index: 999;
+  position: absolute;
+  opacity: 0.25;
+  z-index: 999;
 }
 
 .skill {
-    top: 15%;
-    left: 45%;
-    font-size: 80px;
-    transform: rotateZ(20deg);
+  top: 15%;
+  left: 45%;
+  font-size: 80px;
+  transform: rotateZ(20deg);
 }
 
 .skill2 {
-    top: 75%;
-    left: 40%;
-    font-size: 65px;
-    transform: rotate(-15deg);
+  top: 75%;
+  left: 40%;
+  font-size: 65px;
+  transform: rotate(-15deg);
 }
 
 .skill3 {
-    top: 110%;
-    left: 60%;
-    font-size: 50px;
-    transform: rotate(15deg);
+  top: 110%;
+  left: 60%;
+  font-size: 50px;
+  transform: rotate(15deg);
 }
 
 .skill4 {
-    top: 152%;
-    left: 30%;
-    font-size: 75px;
-    transform: rotate(-10deg);
+  top: 152%;
+  left: 30%;
+  font-size: 75px;
+  transform: rotate(-10deg);
 }
 
 /*Change the way the page looks for printing*/
 @media print {
-    hr {
-        -webkit-print-color-adjust: exact;
-        print-color-adjust: exact;
-        background-color: green !important;
-    }
+  hr {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+    background-color: green !important;
+  }
 
-    body {
-        /*Font*/
-        font-family: serif;
-        font-size: 13.5px;
-        /*Margin*/
-        margin: 0.25in 0.5in 0.5in 0.5in;
-    }
+  body {
+    /*Font*/
+    font-family: serif;
+    font-size: 13.5px;
+    /*Margin*/
+    margin: 0.25in 0.5in 0.5in 0.5in;
+  }
 
-    .dates {
-        font-size: 12px;
-    }
+  .dates {
+    font-size: 12px;
+  }
 
-    #print-button {
-        /*Remove print button*/
-        display: none;
-    }
+  #print-button {
+    /*Remove print button*/
+    display: none;
+  }
 
-    #scroll-container {
-        margin-bottom: 0px;
-    }
+  #scroll-container {
+    margin-bottom: 0px;
+  }
 
-    img {
-        margin: -15px 20px 0px 0px;
-        width: 20%;
-    }
+  img {
+    margin: -15px 20px 0px 0px;
+    width: 20%;
+  }
 
-    li {
-        text-indent: -27px;
-    }
+  li {
+    text-indent: -27px;
+  }
 
-    ul {
-        padding-inline-start: 5px;
-    }
+  ul {
+    padding-inline-start: 5px;
+  }
 
-    .skill {
-        top: 8%;
-        left: 35%;
-        transform: rotate(25deg);
-    }
+  .skill {
+    top: 8%;
+    left: 35%;
+    transform: rotate(25deg);
+  }
 
-    .skill2 {
-        top: 40%;
-        left: 40%;
-        transform: rotate(-20deg);
-    }
+  .skill2 {
+    top: 40%;
+    left: 40%;
+    transform: rotate(-20deg);
+  }
 
-    .skill3 {
-        top: 69%;
-        left: 48%;
-    }
+  .skill3 {
+    top: 69%;
+    left: 48%;
+  }
 
-    .skill4 {
-        font-size: 85px;
-        top: 98%;
-        left: 35%;
-        transform: rotate(-25deg);
-    }
-
+  .skill4 {
+    font-size: 85px;
+    top: 98%;
+    left: 35%;
+    transform: rotate(-25deg);
+  }
 }
 
 /*Style the Hard Skills table*/
 table {
-    width: 100%;
+  width: 100%;
 }
 
 td {
-    text-align: center;
-    width: 20%;
-    padding: 15px 0px;
+  text-align: center;
+  width: 20%;
+  padding: 15px 0px;
 }
 
 /*Style the container that hold the scrolling text*/
 #scroll-container {
-    border: 3px solid #00755E;
-    border-radius: 10px;
-    overflow: hidden;
-    margin-bottom: 50px;
+  border: 3px solid #00755e;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 50px;
 }
 
 /*Style the scrolling text*/
 #scroll-text span {
-    text-align: justify;
+  text-align: justify;
 }
 
 #scroll-text span::after {
-    content: "";
-    display: inline-block;
-    width: 10%;
+  content: "";
+  display: inline-block;
+  width: 10%;
 }
 
 /*Hide the second scroll text initially*/
 #scroll-text2 {
-    display: none;
+  display: none;
 }
 
 /*Style the non-scrolling text for Soft Skills*/
 #scroll-text2 span {
-    text-align: justify;
+  text-align: justify;
 }
 
 #scroll-text2 span::after {
-    content: "";
-    display: inline-block;
-    width: 8%;
+  content: "";
+  display: inline-block;
+  width: 8%;
 }
 
 /*Create scrolling text for Soft Skills*/
 #scroll-text {
-    -moz-animation: my-animation 15s linear infinite;
-    -webkit-animation: my-animation 15s linear infinite;
-    animation: my-animation 15s linear infinite;
+  -moz-animation: my-animation 15s linear infinite;
+  -webkit-animation: my-animation 15s linear infinite;
+  animation: my-animation 15s linear infinite;
 }
 
 .pad-top {
-    padding-top: 35px;
+  padding-top: 35px;
 }
 
 .pad-bot {
-    padding-bottom: 35px;
+  padding-bottom: 35px;
 }
 
 /*Firefox */
 @-moz-keyframes my-animation {
-    from { -moz-transform: translateX(100%); }
-    to { -moz-transform: translateX(-100%); }
+  from {
+    -moz-transform: translateX(100%);
+  }
+  to {
+    -moz-transform: translateX(-100%);
+  }
 }
 
 /*Chrome */
 @-webkit-keyframes my-animation {
-    from { -webkit-transform: translateX(100%); }
-    to { -webkit-transform: translateX(-100%); }
+  from {
+    -webkit-transform: translateX(100%);
+  }
+  to {
+    -webkit-transform: translateX(-100%);
+  }
 }
 
 @keyframes my-animation {
-    from {
-      -moz-transform: translateX(100%);
-      -webkit-transform: translateX(100%);
-      transform: translateX(100%);
-    }
-    to {
-      -moz-transform: translateX(-100%);
-      -webkit-transform: translateX(-100%);
-      transform: translateX(-100%);
-    }
+  from {
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+  to {
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
 }
