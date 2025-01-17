@@ -1,322 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Robert P. Horosewski">
-    <meta name="description" content="A resume designed to showcase skills in web development">
-    <meta name="robots" content="noindex, nofollow">
-    <meta name="language" content="english">
-    <meta name="format-detection" content="telephone=yes">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Robert P. Horosewski" />
+    <meta
+      name="description"
+      content="A resume designed to showcase skills in web development"
+    />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="language" content="english" />
+    <meta name="format-detection" content="telephone=yes" />
     <title>Resume</title>
 
-    <link rel="stylesheet" type="text/css" href="./CSS/style.css">
+    <link rel="stylesheet" type="text/css" href="./CSS/style.css" />
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="./JS/script.js"></script>
-
-    <!--Add slider to showcase Experience **USE Bootstrap Carousel - see DOCUMENTATION**-->
-    <!--Add accordian to professional development which will contain website improvements and social media.-->
-    <!--Add sidebar: Font, Color, -->
-        <!--Explore separate/secondary CSS style sheet-->
-        <!--Different CSS for Traditional Resume, Modern Resume, Computerized Resume?-->
-        <!--Move print button here!-->
-    <!--Add username/password-->
-    <!--Always have something on scroll bar-->
-    <!--Add hyperlinks to Ponemah Crossing Dental about specific changes to website in experience.-->
-    <!--Consider having second element for blinking that is standard and hide/show when printed-->
-    <!--Add <strong> and <em> tags as needed-->
-    <!--Make sure to accurately use block (<div>) vs. inline (<span>) elements-->
-    <!--Double check I have aligned elements by setting width and adding margins to fill parent space-->
-    <!--Consider moving img and button and making them children of the <div> <h1> name-->
-    <!--Set max-width of picture-->
-    <!--Move Soft Skills to Footer?-->
-    <!--Make minor flash like 3 times (like lightning) and then stop unless hovered over-->
-    <!--Semantically describe webpage by changing appropriate <div> to <section> elements-->
-    <!--Replace Absolute Units with Relative Values (measurements)-->
-    <!--Explore Grid Layout with Grid-Template-Areas and using Names like Bio, Education, Work Experience-->
-    <!--Could the answer to extra soft skills be (flex-wrap: nowrap)?-->
-    <!--Use li::marker to change bullet points instead of li::before? And remove li { text-indent & padding-left }-->
-    <!--Add text-shadow somewhere!-->
-    <!--Change blinking to css animation (grow in size and change color, run 3 times, then only on hover?)-->
-    <!-- Avoid overspecifity: apply CSS rules to container as much as possible-->
-    <!-- BIG ISSUE: Remove ID as much as possible and replace with element selectors e.g. header > img {}-->
-    <!--Add certificate for Coursera Introduction to Front End Development (Started February 25th Finished March 3rd)-->
-        <!--Programming with JavaScript (Started March 3rd Finished March 25th)-->
-        <!--Version Control (Started March 25th Finished April 8th)-->
-        <!--HTML and CSS in depth (Started April 8th Finished May 10th)-->
-        <!--React Basics (Started May 13th Finished July 15th)-->
-        <!--Advanced React (Started July 15th Finished October 6)-->
-        <!--Principles of UX/UI Design (Started Occtober 10 Finished November 3)-->
-        <!--Front-End Developer Capstone (Started November 6 Finisihed January 22)-->
-        <!-- Coding Interview Preparation (Started January 22 Finished February 5) -->
-</head>
-<body>
+  </head>
+  <body>
     <!-- Version 2.0 - Revisions based on Handshake recommendations. -->
     <!--Name-->
-    <div>
-        <h1>Robert P. Horosewski</h1>
-    </div>
-    <!-- TODO: Why is print button not showing - check CSS -->
-    <!--Print button-->
-    <div>
-        <button id="print-button">Print</button>
-    </div>
+    <h1>Robert P. Horosewski</h1>
     <!--Contatct Information-->
-    <div>
-        <p> Nashua, NH | (603)718-4611 | robert.horosewski@gmail.com</p>
-        <p>
-            Portfolio: <a href="https://horoserp.github.io/React-Portfolio/" target="blank" rel="noopener noreferrer">https://horoserp.github.io/React-Portfolio/</a><br>
-            LinkedIn: <a href="https://www.linkedin.com/in/robert-horosewski-8a0608196/" target="blank" rel="noopener noreferrer">https://www.linkedin.com/in/robert-horosewski-8a0608196/</a><br>
-            GitHub Account: <a href="https://github.com/horoserp/" target="blank" rel="noopener noreferrer">https://github.com/horoserp/</a>
-        </p>
-    </div>
+    <p>
+      Nashua, NH | (603)718-4611 | robert.horosewski@gmail.com<br /><br />
+      Portfolio: https://horoserp.github.io/React-Portfolio/<br />
+      LinkedIn: https://www.linkedin.com/in/robert-horosewski-8a0608196/<br />
+      GitHub Account: https://github.com/horoserp/
+    </p>
     <!--Objective-->
-    <div>
-        <h3>Objective</h3>
-        <p>I am an efficient and creative individual with multiple W3Schools certifications and Meta's
-            Front-End Developer Professional Certification. Eager to employ my abilities as a
-            front-end website developer, I look forward to utilizing my HTML, CSS and JavaScript
-            proficiencies in a team-driven environment. As a quick learner with strong communication skills,
-            I anticipate contributing immediately to your company's success.
-        </p>
-    </div>
+    <h2>Objective</h2>
+    <p>
+      I am an efficient and creative individual with multiple W3Schools
+      certifications and Meta's Front-End Developer Professional Certification.
+      Eager to employ my abilities as a front-end website developer, I look
+      forward to utilizing my HTML, CSS and JavaScript proficiencies in a
+      team-driven environment. As a quick learner with strong communication
+      skills, I anticipate contributing immediately to your company's success.
+    </p>
     <!--Hard Skills-->
-    <div>
-        <h3>Skills</h3>
-        <table id="skills">
-            <tr>
-                <th>
-                    Languages
-                </th>
-                <td>
-                    HTML
-                </td>
-                <td>
-                    CSS
-                </td>
-                <td>
-                    JavaScript
-                </td>
-                <td>
-                    Java
-                </td>
-            </tr>
-            <tr>
-                <th  class="pad-top" style="vertical-align: bottom;">
-                    Libraries/
-                </th>
-                <td class="pad-top">
-                    React
-                </td>
-                <td class="pad-top">
-                    Formik
-                </td>
-                <td class="pad-top">
-                    Yup
-                </td>
-                <td class="pad-top">
-                    Chakra UI
-                </td>
-            </tr>
-            <tr>
-                <th class="pad-bot" style="vertical-align: top;">
-                    Frameworks
-                </th>
-                <td class="pad-bot">
-                    Bootstrap
-                </td>
-                <td class="pad-bot">
-                    Jest
-                </td>
-                <td class="pad-bot">
-                    React Testing Library
-                </td>
-                <td class="pad-bot">
-                    JQuery
-                </td>
-            </tr>
-            <tr>
-                <th>
-                    CMS, Version Control, <br>IDE, etc.
-                </th>
-                <td>
-                    WordPress
-                </td>
-                <td>
-                    Git/GitHub
-                </td>
-                <td>
-                    Visual Studio Code
-                </td>
-                <td>
-                    Figma
-                </td>
-            </tr>
-        </table>
-    </div>
-    <!--Professional Development-->
-    <!-- TODO: Remove underlines from hyperlinks -->
-    <div>
-        <h3>Professional Development</h3>
-        <p><span class="bold"><a href="https://www.w3schools.com/" target="_blank" rel="noopener noreferrer">W3Schools</a></span>
-            <div class="flex">
-                <div>
-                    <span class="italics"><a href="https://verify.w3schools.com/1P4WHUMFGB" target="_blank"
-                        rel="noopener noreferrer">Certified Front End Developer</a></span></li>
-                        <!-- <span class="dates"> - AUGUST 2024</span> -->
-                </div>
-                <div>
-                    <span class="italics"><a href="https://verify.w3schools.com/1P4WHSSPR9" target="_blank"
-                        rel="noopener noreferrer">Certified JavaScript Developer</a></span></li>
-                        <!-- <span class="dates"> - JUNE 2024</span> -->
-                </div>
-                <div>
-                    <span class="italics"><a href="https://verify.w3schools.com/1OX6EHTPHZ" target="_blank"
-                        rel="noopener noreferrer">Certified Web Designer</a></span></li>
-                        <!-- <span class="dates"> - JUNE 2024</span> -->
-                </div>
-                <div>
-                    <span class="italics"><a href="https://verify.w3schools.com/1OWQQ0H9RC" target="_blank"
-                        rel="noopener noreferrer">Certified CSS Developer</a></span></li>
-                        <!-- <span class="dates"> - JUNE 2024</span> -->
-                        <!-- Began June 2024-->
-                </div>
-                <div>
-                    <span class="italics"><a href="https://verify.w3schools.com/1OVIHINN0S" target="_blank"
-                        rel="noopener noreferrer">Certified HTML Developer</a></span></li>
-                        <!-- <span class="dates"> - JUNE 2024</span> -->
-                        <!-- Began May 2024-->
-                </div>
-                <div>
-                    <span class="italics"><a href="https://verify.w3schools.com/1OQWMWVOSK" target="_blank"
-                        rel="noopener noreferrer">Certified Bootstrap 5 Developer</a></span></li>
-                        <!-- <span class="dates"> - APRIL 2024</span> -->
-                        <!-- Began February 2024 -->
-                </div>
-            </div>
-        </p>
-        <p><span class="bold"><a href="https://www.coursera.org/" target="_blank" rel="noopener noreferrer">Coursera</a></span>
-            <ul>
-                <li><span class="italics"><a href="Images\Meta Certificate Front-End Developer.pdf" target="_blank"
-                    rel="noopener noreferrer">Meta Front-End Developer Professional Certificate</a></span></li><br>
-                    <!-- <span class="dates"> - FEBRUARY 2024</span> -->
-                    <!-- Began March 2023 -->
-                        Introduction to Front-End Development, Programming with JavaScript, Version Control, HTML and CSS In Depth, React Basics,
-                        Advanced React, Principles of UX/UI Design, Front-End Developer Capstone, and Coding Interview Preparation.
-            </ul>
-        <p><span class="bold"><a href="https://www.udemy.com/" target="_blank" rel="noopener noreferrer">Udemy</a></span>
-            <ul>
-                <li><span class="italics"><a href="https://www.udemy.com/course/build-an-animated-landing-page-by-html-css-and-javascript" target="_blank"
-                    rel="noopener noreferrer">Build an Animated Landing Page by HTML, CSS and JavaScript</a></span></li>
-                    <!-- <span class="dates"> - DECEMBER 2022</span> -->
-                <li><span class="italics"><a href="https://www.udemy.com/course/javascript-essentials/" target="_blank" rel="noopener noreferrer">JavaScript Essentials</a></span>
-                    <!-- <span class="dates"> - OCTOBER 2022</span></li> -->
-            </ul>
-        </p>
-    </div>
+    <h2>Skills</h2>
+    <ul>
+      <li>Languages: HTML, CSS, JavaScript, Java</li>
+      <li>
+        Libraries/Frameworks: React, Bootstrap, Formik, Yup, Chakra UI, JQuery
+      </li>
+      <li>
+        CMS, Version Control, IDE, etc: Wordpress, Git/GitHub, Visual Studio
+        Code, Figma
+      </li>
+    </ul>
     <!--Experience-->
-    <div>
-        <h3>Experience</h3>
-        <!-- Job 1 -->
-        <p>
-            <a href="https://www.usertesting.com/" rel="noopener noreferrer">
-              <strong>UserTesting | Chamblee, GA</strong>
-            </a>
-            <br/>
-            <em>Tester</em>
-            <span class="dates">(SEPTEMBER 2024 - Current)</span>
-            <ul>
-              <li>Work hand in hand with corporate clients to fulfill their requests on state
-                of the art websites, exercising attention to detail and seeking to
-                improve the overall user experience.</li>
-              <li>Provide accurate and thorough feedback utilizing clear and precise
-                communication in a timely manner.</li>
-              <li>Receive instructions and deliver results via a remote setting.</li>
-            </ul>
-        </p>
-        <!--Job 2-->
-        <p><span class="bold"><a href="https://ponemahdental.com/" target="_blank" rel="noopener noreferrer">Ponemah Crossing Dental, P.C. | Amherst, NH </a></span>
-            <br/>
-            <em>Treatment Coordinator</em>
-            <span class="dates">(DECEMBER 2009 - SEPTEMBER 2023) <!--9/18/23--></span>
-        </p>
-        <!--Duties-->
-        <ul>
-            <li>Perform front-end developer duties including updating the company's website by creating new pages, redesigning old pages and adding CSS/JavaScript to
-                ensure eye-catching functionality.</li>
-            <li>Spearhead 2 colleague-supported design groups, utilizing active listening and teamwork skills, for the initial implementation and subsequent redesign of the
-                website, with each project resulting in a psuedo-UI Kit.</li>
-            <li>Continually update website, throughout both iterations, with current content utilizing Joomla and WordPress respectively.</li>
-            <li>Increase customer base by creating, managing and updating accounts on the following social media platforms: Google, Facebook, Instagram, Yelp and HealthGrades.
-                Instruct co-workers on their use and upkeep.</li>
-            <li>Carry out IT duties entailing providing internal support for 20 Windows 10 workstations, 1 Windows Server 2016 Standard server
-                and the Weave VoIP phone system.</li>
-            <li>Act as primary liaison for external website company, social media company and IT provider.</li>
-            <li>Manage customer interactions encompassing facilitating patient referrals, optimizing up to 7 provider
-                schedules and resolving customer complaints.</li>
-            <li>Fulfill insurance responsibilities involving updating insurance information, creating estimates and negotiating financial agreements for
-                dental work, verifying insurance benefits prior to patient appointments and preparing insurance claims.</li>
-        </ul>
-        <!--Job 3-->
-        <p><span class="bold"><a href="https://www.drakecounselingservices.com/" target="_blank" rel="noopener noreferrer">Drake Counseling Services | Grand Forks, ND </a></span>
-            <br/>
-            <em>Office Manager</em>
-            <span class="dates">(JUNE 2007 - APRIL 2009)</span>
-        </p>
-        <!--Duties-->
-        <ul>
-            <li>Utilize problem-solving skills during the day-to-day operations of the business including supply
-              chain management, requests of and responses to the property
-              management company and communications with 3 head office personnel.</li>
-            <li>Produce income by optimizing the schedules of up to 4 providers,
-              performing as many as 5 intake screenings per day, enrolling customers, collecting
-              payments and spearheading recruitment campaigns.</li>
-            <li>Provide administrative support by directing patient review
-              meetings, ensuring customer compliance by enforcing drug testing
-              protocol and managing customers' first impressions of the office.</li>
-        </ul>
-    </div>
+    <h2>Experience</h2>
+    <!-- Job 1 -->
+    <h3>UserTesting | Chamblee, GA</h3>
+    <em>Tester (September 2024 - Current)</em>
+    <!--Duties-->
+    <ul>
+      <li>
+        Work hand in hand with corporate clients to fulfill their requests on
+        state of the art websites, exercising attention to detail and seeking to
+        improve the overall user experience.
+      </li>
+      <li>
+        Provide accurate and thorough feedback utilizing clear and precise
+        communication in a timely manner.
+      </li>
+      <li>Receive instructions and deliver results via a remote setting.</li>
+    </ul>
+    <!--Job 2-->
+    <h3>Ponemah Crossing Dental, P.C. | Amherst, NH</h3>
+    <em
+      >Treatment Coordinator (December 2009 - Deember 2023)
+      <!--9/18/23--></em
+    >
+    <!--Duties-->
+    <ul>
+      <li>
+        Perform front-end developer duties including updating the company's
+        website by creating new pages, redesigning old pages and adding
+        CSS/JavaScript to ensure eye-catching functionality.
+      </li>
+      <li>
+        Spearhead 2 colleague-supported design groups, utilizing active
+        listening and teamwork skills, for the initial implementation and
+        subsequent redesign of the website, with each project resulting in a
+        psuedo-UI Kit.
+      </li>
+      <li>
+        Continually update website, throughout both iterations, with current
+        content utilizing Joomla and WordPress respectively.
+      </li>
+      <li>
+        Increase customer base by creating, managing and updating accounts on
+        the following social media platforms: Google, Facebook, Instagram, Yelp
+        and HealthGrades. Instruct co-workers on their use and upkeep.
+      </li>
+      <li>
+        Carry out IT duties entailing providing internal support for 20 Windows
+        10 workstations, 1 Windows Server 2016 Standard server and the Weave
+        VoIP phone system.
+      </li>
+      <li>
+        Act as primary liaison for external website company, social media
+        company and IT provider.
+      </li>
+      <li>
+        Manage customer interactions encompassing facilitating patient
+        referrals, optimizing up to 7 provider schedules and resolving customer
+        complaints.
+      </li>
+      <li>
+        Fulfill insurance responsibilities involving updating insurance
+        information, creating estimates and negotiating financial agreements for
+        dental work, verifying insurance benefits prior to patient appointments
+        and preparing insurance claims.
+      </li>
+    </ul>
+    <!--Job 3-->
+    <h3>Drake Counseling Services | Grand Forks, ND</h3>
+    <em>Office Manager (June 2007 - April 2009)</em>
+    <!--Duties-->
+    <ul>
+      <li>
+        Utilize problem-solving skills during the day-to-day operations of the
+        business including supply chain management, requests of and responses to
+        the property management company and communications with 3 head office
+        personnel.
+      </li>
+      <li>
+        Produce income by optimizing the schedules of up to 4 providers,
+        performing as many as 5 intake screenings per day, enrolling customers,
+        collecting payments and spearheading recruitment campaigns.
+      </li>
+      <li>
+        Provide administrative support by directing patient review meetings,
+        ensuring customer compliance by enforcing drug testing protocol and
+        managing customers' first impressions of the office.
+      </li>
+    </ul>
+    <!--Professional Development-->
+    <h2>Professional Development</h2>
+    <h3>W3Schools</h3>
+    <ul>
+      <li>Certified Front End Developer</li>
+      <li>Certified JavaScript Developer</li>
+      <li>Certified Web Designer</li>
+      <li>Certified CSS Developer</li>
+      <li>Certified HTML Developer</li>
+      <li>Certified Bootstrap 5 Developer</li>
+    </ul>
+    <h3>Coursera</h3>
+    <ul>
+      <li>Meta Front-End Developer Professional Certificate</li>
+    </ul>
+    <ul>
+        <li>Introduction to Front-End Development</li>
+        <li>Programming with JavaScript</li>
+        <li>Version Control</li>
+        <li>HTML and CSS In Depth</li>
+        <li>React Basics</li>
+        <li>Advanced React</li>
+        <li>Principles of UX/UI Design</li>
+        <li>Front-End Developer Capstone</li>
+        <li>Coding Interview Preparation</li>
+    </ul>
+    </ul>
+    <h3>Udemy</h3>
+    <ul>
+      <li>Build an Animated Landing Page by HTML, CSS and JavaScript</li>
+      <li>JavaScript Essentials</li>
+    </ul>
     <!--Projects-->
-    <div>
-        <h3>Projects</h3>
-        <ul>
-            <!-- TODO: <li>Describe Portfolio "to fulfill the requirements for the Meta course"</li> -->
-            <!-- TODO: <li>Describe Capstone</li> -->
-            <!-- TODO: <li>Describe dice project with Vin "purpose of the program - roll dice"</li> -->
-            <li>Design materials for variuos employers including an adaptable advertising template, an insurance brochure, an implant brochure,
-                a procedure manual and an addiction education module.</li>
-        </ul>
-    </div>
+    <h2>Projects</h2>
+    <ul>
+      <!-- TODO: <li>Describe Portfolio "to fulfill the requirements for the Meta course"</li> -->
+      <!-- TODO: <li>Describe Capstone</li> -->
+      <!-- TODO: <li>Describe dice project with Vin "purpose of the program - roll dice"</li> -->
+      <li>
+        Design materials for variuos employers including an adaptable
+        advertising template, an insurance brochure, an implant brochure, a
+        procedure manual and an addiction education module.
+      </li>
+    </ul>
     <!--Education-->
-    <div>
-        <h3>Education</h3>
-        <p><span class="bold"><a href="https://udayton.edu/" target="_blank" rel="noopener noreferrer">University of Dayton | Dayton OH </a></span>
-            <br/>
-            <em>Bachelor of Science in Psychology, <span id="blinking">Minor in Computer Science</span></em></p>
-        <p class="dates">DECEMBER 1997</p>
-    </div>
-    <!--Soft Skills-->
-    <!-- <div>
-        <h3>Soft Skills</h3>
-        <div id="scroll-container">
-            <div id="scroll-text">
-                <span>Adaptable</span>
-                <span>Organized</span>
-                <span>Friendly</span>
-                <span>Dependable</span>
-                <span>Detail-Oriented</span>
-            </div>
-            <div id="scroll-text2">
-                <span>Adaptable</span>
-                <span>Organized</span>
-                <span>Friendly</span>
-                <span>Dependable</span>
-                <span>Detail-Oriented</span>
-            </div>
-        </div>
-    </div> -->
+    <h2>Education</h2>
+    <h3>University of Dayton | Dayton, OH</h3>
+    <em
+      >Bachelor of Science in Psychology, Minor in Computer Science (December
+      1997)</em
+    >
     <!--References-->
     <!-- <div>
         <h3>References</h3>
@@ -327,5 +201,5 @@
             <li>Vicki Loyland, Director<br>Drake Counseling Services<br>Former supervisor</li>
         </ul>
     </div> -->
-</body>
+  </body>
 </html>
