@@ -19,6 +19,9 @@ body {
 }
 
 /* Margins */
+h1 {
+  margin-bottom: 0.5rem;
+}
 h2,
 p,
 ul {
