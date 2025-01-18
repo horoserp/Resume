@@ -1,8 +1,59 @@
+/* Universal Selector to remove default browser settings */
+* {
+  padding: 0rem;
+  margin: 0rem;
+  box-sizing: border-box;
+}
+
 html {
   font-size: 12px;
 }
 
 body {
   font-family: "Courier";
-  margin: 50px 50px 0 50px;
+  margin: 50px;
+}
+
+.center {
+  text-align: center;
+}
+
+/* Margins */
+h2,
+p,
+ul {
+  margin-bottom: 1rem;
+}
+
+ul {
+  margin-top: 1rem;
+  margin-inline-start: 1.5rem;
+}
+
+.grid-1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  row-gap: 0.1rem;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 0.1rem 1.2rem;
+  margin-left: 2.5rem;
+}
+
+/* Font Sizes */
+h2 {
+  font-size: 1.75rem;
+}
+
+h3 {
+  font-size: 1.4rem;
+}
+
+.larger {
+  font-size: 1.3rem;
 }
